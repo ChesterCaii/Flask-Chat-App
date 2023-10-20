@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+<!-- This content block overrides the 'content' block in the 'base.html' template -->
+
+<!-- Create a form for entering the chat room -->
+<form method="post" class="buttons">
+  <h3>Enter The Chat Room</h3>
+
+  <!-- Input field for the user's name -->
+  <div>
+    <label>Name:</label>
+    <input
+      type="text"
+      placeholder="Pick a name!"
+      name="name"
+      value="{{name}}"
+    />
+  </div>
+
+  <!-- Input field for the room code and a button to join the room -->
+  <div class="join">
+    <input type="text" placeholder="Room Code" name="code" value="{{code}}" />
+    <button type="submit" name="join">Join a Room</button>
+  </div>
+
+  <!-- Button to create a new room -->
+  <button type="submit" name="create" class="create-btn">Create a Room</button>
+
+  <!-- Display an error message if it exists -->
+  {% if error %}
+  <ul>
+    <li>{{error}}</li>
+  </ul>
+  {% endif %}
+</form>
+{% endblock %}

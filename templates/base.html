@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat App</title>
+
+    <!-- Include an external CSS file using Flask's url_for function to generate the correct URL -->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/style.css')}}"
+    />
+
+    <!-- Include the Socket.IO library from a CDN (Content Delivery Network) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+      integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Define a container div with the class 'content' for the page content -->
+    <div class="content">
+      <!-- This is a placeholder for the content of the specific page -->
+      {% block content %} {% endblock %}
+    </div>
+  </body>
+</html>

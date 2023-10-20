@@ -1,0 +1,81 @@
+/* CSS for the 'content' class */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* CSS for the 'buttons' class */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Add spacing between child elements */
+  }
+  
+  /* CSS for the 'join' class */
+  .join {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  /* CSS for the 'create-btn' class */
+  .create-btn {
+    width: 100%;
+  }
+  
+  /* CSS for the 'message-box' class */
+  .message-box {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    height: 80vh; /* Set the height to 80% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    width: 80vw; /* Set the width to 80% of the viewport width */
+    align-items: stretch; /* Stretch child elements to fit the container */
+  }
+  
+  /* CSS for the 'messages' class */
+  .messages {
+    overflow-y: scroll; /* Enable vertical scrolling if the content overflows */
+    flex: 1; /* Fill available vertical space */
+    width: 100%;
+  }
+  
+  /* CSS for the 'inputs' class */
+  .inputs {
+    padding: 10px;
+    display: flex; /* Display as a flex container */
+  }
+  
+  /* CSS for the 'h2' element */
+  h2 {
+    text-align: center; /* Center-align text */
+  }
+  
+  /* CSS for the 'message' element with id 'message' */
+  #message {
+    flex: 1; /* Take up available horizontal space */
+  }
+  
+  /* CSS for the 'text' class */
+  .text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* CSS for the 'muted' class */
+  .muted {
+    font-size: 10px;
+    color: darkgray; /* Set the text color to dark gray */
+  }
+  
